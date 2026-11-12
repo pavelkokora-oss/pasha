@@ -245,6 +245,10 @@
   .half-tag strong::after { content:""; position:absolute; left:-12px; right:-12px; top:-8px; bottom:-8px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M14 9 C40 2 92 2 110 10 C121 16 117 30 96 35 C70 40 30 39 12 32 C1 27 3 14 22 8 C34 5 46 4 58 5' fill='none' stroke='%23f0418c' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%; transform:rotate(-3deg); pointer-events:none; }
   /* smiley in the hero title: keep the ')' from hanging below the line */
   h1 strong { font-weight:inherit; display:inline-block; font-size:.8em; line-height:1; transform:translateY(-.08em); }
+  .nav nav { display:none; }
+  /* contact band: Telegram is the main button, email becomes a plain one */
+  .cta .actions a:nth-child(2) { order:-1; background:var(--dark-btn-bg); color:var(--dark-btn-ink); border:var(--btn-border); }
+  .cta .actions a:nth-child(1) { background:transparent; color:var(--dark-ink); border:1px solid color-mix(in srgb, var(--dark-ink) 35%, transparent); }
 
 </style>
 </head>
@@ -298,13 +302,13 @@
     <div class="half-grid">
       <div class="half">
         <span class="half-tag">EdTech · AI tutors · Languages · <strong>Freemium</strong></span>
-        <h3>Praktika.ai</h3>
+        <h3><a class="half-link" href="https://praktika.ai/" target="_blank" rel="noopener">Praktika.ai ↗</a></h3>
         <p class="half-role">First employee, Product Manager · 2021–2023</p><div class="half-num"><b>$55M ARR</b><span>Praktika today</span></div>
         <ul><li>Owned the product roadmap for the first 1.5 years, took it to market, reached $20K MRR.</li><li>1.5x+ free trial → paid subscription after adding the OpenAI API and running a bunch of experiments, incl. pricing A/B tests.</li></ul>
       </div>
       <div class="half">
         <span class="half-tag">EdTech · Human tutors · STEM</span>
-        <h3>Algonova</h3>
+        <h3><a class="half-link" href="https://algonova.com/" target="_blank" rel="noopener">Algonova ↗</a></h3>
         <p class="half-role">Product Manager → Head of LATAM Business Unit · 2025–2026</p><div class="half-num"><b>0.8 → 1.1</b><span>first-sale margin / CAC: the first sale became profitable</span></div>
         <ul><li>Owned a ~$2M (annual) P&amp;L and a team of 200+, incl. 110+ teachers.</li><li>Achieved profitability via 1.8x growth of lead → trial class conversion.</li></ul>
       </div>
