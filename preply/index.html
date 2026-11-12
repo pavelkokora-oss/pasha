@@ -243,6 +243,8 @@
   /* pink "pencil" circle around **word** in a halves tag */
   .half-tag strong { font-weight:inherit; position:relative; display:inline-block; }
   .half-tag strong::after { content:""; position:absolute; left:-12px; right:-12px; top:-8px; bottom:-8px; background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M14 9 C40 2 92 2 110 10 C121 16 117 30 96 35 C70 40 30 39 12 32 C1 27 3 14 22 8 C34 5 46 4 58 5' fill='none' stroke='%23f0418c' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center/100% 100%; transform:rotate(-3deg); pointer-events:none; }
+  /* smiley in the hero title: keep the ')' from hanging below the line */
+  h1 strong { font-weight:inherit; display:inline-block; font-size:.8em; line-height:1; transform:translateY(-.08em); }
 
 </style>
 </head>
@@ -257,7 +259,7 @@
     <div class="hero-grid">
       <div>
         <div style="margin-top:36px"><span class="pill">Re: Staff PM, Preply Pro</span><span class="pill">I&#x27;m based in Barcelona</span></div>
-        <h1>Hi, I&#x27;m Pavel.<br>We need to talk. Urgently. It&#x27;s a match :)</h1>
+        <h1>Hi, I&#x27;m Pavel.<br>We need to talk. Urgently. It&#x27;s a match <strong>:)</strong></h1>
         
         <div class="actions">
           <a class="btn" href="#match">Why is it match? ↓</a>
